@@ -8,8 +8,8 @@ Unreal Engine C++ Developer: Learn C++ and Make Video Games 를 통해 만든 �
 ### Pawn 클래스 다이어그램
 ![image](https://user-images.githubusercontent.com/63279872/166604864-9a17fc33-2812-4a9d-bf4a-2b596766a6bf.png)
 <br>BasePawn 클래스는 Pawn클래스를 상속받아 만들어졌으며, 탱크의 몸체 구성과 발사 동작만이 구현되어 있음
-Tank 클래스는 플레이어가 조종하게 될 Pawn으로, 이동에 대한 Move()함수와 Turn() 함수가 존재함
-Tower 클래스는 Enemy 역할로, 이동의 기능은 없으며 포대를 플레이어에 조준하여 발사하는 기능만이 존재함
+<br>Tank 클래스는 플레이어가 조종하게 될 Pawn으로, 이동에 대한 Move()함수와 Turn() 함수가 존재함
+<br>Tower 클래스는 Enemy 역할로, 이동의 기능은 없으며 포대를 플레이어에 조준하여 발사하는 기능만이 존재함
 
 
 ## 샘플 코드

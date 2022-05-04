@@ -48,13 +48,17 @@ void AProjectile::Tick(float DeltaTime)
 
 void AProjectile::OnHit(UPrimitiveComponent* HitComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& Hit)
 {
+	//발사된 포가 자신의 주인을 히트하지 않도록 getOwner로 불러와서 예외처리함
 	AActor* MyOwner = GetOwner();
+
+	//만약 주인이 없는 포라면 즉시 게임에서 제거시킴
 	if (MyOwner == nullptr)
 	{
 		Destroy();
 		return;
 	}
 
+	
 	AController* MyOwnerInstigator = MyOwner->GetInstigatorController();
 	UClass* DamgeTypeClass = UDamageType::StaticClass();
 
